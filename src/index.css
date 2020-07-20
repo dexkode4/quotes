@@ -1,13 +1,77 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; */
+  /* background: rgb(52, 34, 36); */
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  color: #fff !important;
+  background-color: rgb(52, 34, 36);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+@media (max-width: 31em) {
+  .btn {
+    margin-top: 5rem;
+  }
+}
+
+.quote {
+  position: relative;
+}
+.text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media (max-width: 31em) {
+  .text {
+    font-size: 1.5rem;
+  }
+}
+.author {
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 31em) {
+  .author {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+i {
+  font-size: 1.5em;
+  margin-right: 0.4em;
 }
